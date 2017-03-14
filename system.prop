@@ -10,9 +10,9 @@ persist.ril.features=0x34
 persist.ril.modem.ttydevice=/dev/ttyUSB4
 persist.ril.tcmd.ttydevice=/dev/ttyUSB3
 # Leave default mode to 4 (CDMA) but need it to be Global (7) for LTE/CDMA
-ro.telephony.default_network=0
+ro.telephony.default_network=7
 ro.telephony.call_ring.multiple=false
-ro.ril.ntmodeglobal=true
+ro.ril.ntmodeglobal=false
 ro.telephony.ril.v3=signalstrength,skipbrokendatacall,writeaidonly
 
 # The OpenGL ES API level that is natively supported by this device.
@@ -27,4 +27,4 @@ ro.mot.hw.uaprof=http://uaprof.motorola.com/phoneconfig/motomz601/Profile/motomz
 ro.build.bp.config.version=UCAEVEUB1B8EU03F.0R
 
 # Google use the system property to control if allow device to be unlock without SIM
-keyguard.no_require_sim=true
+keyguard.no_require_sim=false
